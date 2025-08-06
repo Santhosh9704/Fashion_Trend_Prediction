@@ -1,0 +1,4 @@
+platform,username,caption,likes,hashtags,cleaned_caption,sentiment,image_path,predicted_style
+Instagram,fashionista_101,Loving this oversized blazer 🔥 #OOTD #StreetStyle,1250,"#OOTD,#StreetStyle",loving this oversized blazer,Positive,style_images/img1.jpg,unknown
+Twitter,runwayqueen,Back to 90s with #Retro looks! ✨🖤,430,#Retro,back to s with  looks,Neutral,style_images/img2.jpg,unknown
+Pinterest,fab_finds,Lace is back in trend! Loving these feminine vibes 💃 #LaceTrend,212,#LaceTrend,lace is back in trend loving these feminine vibes,Positive,style_images/img3.jpg,unknown
