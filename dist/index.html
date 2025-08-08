@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Style Predictor</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bx1UEEgJ.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fashion Style Predictor</h1>
+            <p>Upload an image to predict the fashion style</p>
+        </header>
+        
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        <p>Click to upload or drag and drop</p>
+                        <p class="upload-hint">PNG, JPG up to 10MB</p>
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <img id="previewImage" alt="Preview">
+                    <button id="predictBtn" class="predict-btn">Predict Style</button>
+                </div>
+            </div>
+            
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>Prediction Results</h2>
+                <div class="result-card">
+                    <div class="style-prediction">
+                        <h3>Predicted Style</h3>
+                        <p id="predictedStyle" class="style-result"></p>
+                    </div>
+                    <div class="confidence-score">
+                        <h3>Confidence</h3>
+                        <div class="confidence-bar">
+                            <div id="confidenceBar" class="confidence-fill"></div>
+                        </div>
+                        <p id="confidenceText" class="confidence-text"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing image...</p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
